@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Maykhol — PCB Designer</title>
+  <meta name="description" content="Portafolio de diseño de PCBs con KiCad — Maykhol" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">Maykhol<span class="accent">.</span></a>
+      <ul class="nav-links">
+        <li><a href="#about">Sobre mí</a></li>
+        <li><a href="#projects">Proyectos</a></li>
+        <li><a href="#contact">Contacto</a></li>
+        <li><a href="https://github.com/Maykhol10" target="_blank" class="btn-nav">GitHub</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-content">
+      <p class="hero-greeting">Hola, soy</p>
+      <h1 class="hero-name">Maykhol</h1>
+      <h2 class="hero-title">PCB Designer <span class="accent">|</span> KiCad</h2>
+      <p class="hero-desc">
+        Diseño circuitos impresos funcionales y optimizados usando KiCad.
+        Desde esquemáticos hasta Gerbers listos para fabricación.
+      </p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn-primary">Ver proyectos</a>
+        <a href="#contact" class="btn-secondary">Contactar</a>
+      </div>
+      <div class="hero-tags">
+        <span class="tag">KiCad</span>
+        <span class="tag">PCB Layout</span>
+        <span class="tag">Esquemáticos</span>
+        <span class="tag">Gerbers</span>
+        <span class="tag">SMD / THT</span>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="pcb-grid">
+        <div class="pcb-dot"></div><div class="pcb-dot"></div><div class="pcb-dot"></div>
+        <div class="pcb-dot"></div><div class="pcb-dot accent-dot"></div><div class="pcb-dot"></div>
+        <div class="pcb-dot"></div><div class="pcb-dot"></div><div class="pcb-dot"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="container">
+      <h2 class="section-title">Sobre mí</h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>
+            Soy un diseñador de PCBs con experiencia en <strong>KiCad</strong>, apasionado por
+            convertir ideas electrónicas en diseños físicos funcionales y bien optimizados.
+          </p>
+          <p>
+            Me especializo en diseño de circuitos para microcontroladores, sistemas de
+            alimentación, y comunicación inalámbrica (WiFi, Bluetooth, RF).
+          </p>
+          <p>
+            Cada diseño que realizo está pensado para ser fabricable, testeado y documentado correctamente.
+          </p>
+        </div>
+        <div class="skills-grid">
+          <div class="skill-card">
+            <span class="skill-icon">⬡</span>
+            <h4>Herramientas</h4>
+            <ul>
+              <li>KiCad 7/8</li>
+              <li>LTspice</li>
+              <li>FreeCAD</li>
+            </ul>
+          </div>
+          <div class="skill-card">
+            <span class="skill-icon">⬡</span>
+            <h4>Tecnologías</h4>
+            <ul>
+              <li>SMD / THT</li>
+              <li>2-4 capas</li>
+              <li>High-speed signals</li>
+            </ul>
+          </div>
+          <div class="skill-card">
+            <span class="skill-icon">⬡</span>
+            <h4>Microcontroladores</h4>
+            <ul>
+              <li>ESP32 / ESP8266</li>
+              <li>STM32</li>
+              <li>ATmega / Arduino</li>
+            </ul>
+          </div>
+          <div class="skill-card">
+            <span class="skill-icon">⬡</span>
+            <h4>Entregables</h4>
+            <ul>
+              <li>Gerbers / Drill files</li>
+              <li>BOM completo</li>
+              <li>Pick & Place</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="container">
+      <h2 class="section-title">Proyectos</h2>
+      <div class="filter-bar">
+        <button class="filter-btn active" data-filter="all">Todos</button>
+        <button class="filter-btn" data-filter="esp32">ESP32</button>
+        <button class="filter-btn" data-filter="power">Power</button>
+        <button class="filter-btn" data-filter="stm32">STM32</button>
+        <button class="filter-btn" data-filter="rf">RF / IoT</button>
+      </div>
+      <div class="projects-grid" id="projects-grid">
+
+        <!-- PROJECT CARD 1 -->
+        <div class="project-card" data-tags="esp32 rf">
+          <div class="card-image">
+            <img src="https://placehold.co/600x400/0d2137/00d4aa?text=ESP32+Dev+Board" alt="ESP32 Development Board PCB" loading="lazy" />
+            <div class="card-overlay">
+              <a href="https://github.com/Maykhol10" target="_blank" class="overlay-btn">Ver en GitHub</a>
+            </div>
+          </div>
+          <div class="card-body">
+            <div class="card-tags">
+              <span class="tag-badge esp32">ESP32</span>
+              <span class="tag-badge rf">WiFi/BT</span>
+            </div>
+            <h3 class="card-title">ESP32 Development Board</h3>
+            <p class="card-desc">
+              Placa de desarrollo personalizada basada en ESP32. Incluye regulador de voltaje,
+              conectores de expansión, LEDs de estado y botón de reset. Diseñada en 2 capas con KiCad.
+            </p>
+            <div class="card-meta">
+              <span>2 capas</span>
+              <span>SMD + THT</span>
+              <span>3.3V / 5V</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- PROJECT CARD 2 -->
+        <div class="project-card" data-tags="power">
+          <div class="card-image">
+            <img src="https://placehold.co/600x400/0d2137/00d4aa?text=Buck+Converter+5A" alt="Buck Converter PCB" loading="lazy" />
+            <div class="card-overlay">
+              <a href="https://github.com/Maykhol10" target="_blank" class="overlay-btn">Ver en GitHub</a>
+            </div>
+          </div>
+          <div class="card-body">
+            <div class="card-tags">
+              <span class="tag-badge power">Power</span>
+              <span class="tag-badge">SMD</span>
+            </div>
+            <h3 class="card-title">Buck Converter 5A</h3>
+            <p class="card-desc">
+              Convertidor buck de alta eficiencia basado en LM2596. Entrada 7-35V, salida ajustable
+              1.25-30V hasta 5A. Diseño compacto con planos de cobre optimizados.
+            </p>
+            <div class="card-meta">
+              <span>2 capas</span>
+              <span>SMD</span>
+              <span>5A / 95% eficiencia</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- PROJECT CARD 3 -->
+        <div class="project-card" data-tags="stm32">
+          <div class="card-image">
+            <img src="https://placehold.co/600x400/0d2137/00d4aa?text=STM32+Motor+Controller" alt="STM32 Motor Controller PCB" loading="lazy" />
+            <div class="card-overlay">
+              <a href="https://github.com/Maykhol10" target="_blank" class="overlay-btn">Ver en GitHub</a>
+            </div>
+          </div>
+          <div class="card-body">
+            <div class="card-tags">
+              <span class="tag-badge stm32">STM32</span>
+              <span class="tag-badge power">Motor</span>
+            </div>
+            <h3 class="card-title">STM32 Motor Controller</h3>
+            <p class="card-desc">
+              Controlador de motores DC con STM32F103. Driver DRV8833 integrado para 2 motores
+              independientes. Comunicación UART y I2C para sensores externos.
+            </p>
+            <div class="card-meta">
+              <span>2 capas</span>
+              <span>SMD</span>
+              <span>12V / 2A por canal</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- PROJECT CARD 4 -->
+        <div class="project-card" data-tags="esp32 rf">
+          <div class="card-image">
+            <img src="https://placehold.co/600x400/0d2137/00d4aa?text=IoT+Sensor+Node" alt="IoT Sensor Node PCB" loading="lazy" />
+            <div class="card-overlay">
+              <a href="https://github.com/Maykhol10" target="_blank" class="overlay-btn">Ver en GitHub</a>
+            </div>
+          </div>
+          <div class="card-body">
+            <div class="card-tags">
+              <span class="tag-badge esp32">ESP32</span>
+              <span class="tag-badge rf">IoT</span>
+            </div>
+            <h3 class="card-title">IoT Sensor Node</h3>
+            <p class="card-desc">
+              Nodo sensor IoT con ESP32-C3 de bajo consumo. Sensores de temperatura, humedad y
+              presión integrados. Batería LiPo con cargador TP4056 y modo deep sleep.
+            </p>
+            <div class="card-meta">
+              <span>2 capas</span>
+              <span>SMD</span>
+              <span>Battery powered</span>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- /projects-grid -->
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="container">
+      <h2 class="section-title">Contacto</h2>
+      <p class="contact-desc">
+        ¿Tienes un proyecto de PCB en mente? Hablemos.
+      </p>
+      <div class="contact-links">
+        <a href="mailto:diosdadomaykhol.jm@gmail.com" class="contact-card">
+          <span class="contact-icon">✉</span>
+          <div>
+            <h4>Email</h4>
+            <p>diosdadomaykhol.jm@gmail.com</p>
+          </div>
+        </a>
+        <a href="https://github.com/Maykhol10" target="_blank" class="contact-card">
+          <span class="contact-icon">⌥</span>
+          <div>
+            <h4>GitHub</h4>
+            <p>github.com/Maykhol10</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <p>Diseñado y construido por <span class="accent">Maykhol</span> — KiCad PCB Designer</p>
+      <p class="footer-sub">Hecho con HTML, CSS y muchos Gerbers.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
