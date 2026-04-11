@@ -244,7 +244,7 @@ filterBtns.forEach((btn) => {
 updateProjectCount();
 
 // ===== SCROLL REVEAL =====
-const revealItems = document.querySelectorAll('.project-card, .skill-card, .summary-card, .contact-card, .hero-panel, .about-text');
+const revealItems = document.querySelectorAll('.project-card, .skill-card, .summary-card, .contact-card, .about-text');
 
 const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
