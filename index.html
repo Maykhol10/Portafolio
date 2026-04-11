@@ -166,6 +166,7 @@
           <button class="filter-btn" data-filter="integracion">Integración</button>
           <button class="filter-btn" data-filter="inversa">Ing. Inversa</button>
           <button class="filter-btn" data-filter="proteus">Proteus</button>
+          <button class="filter-btn" data-filter="autocad">AutoCAD</button>
         </div>
 
         <div class="projects-grid" id="projects-grid">
@@ -234,7 +235,7 @@
             <div class="version-carousel active" data-version="v1.5">
               <div class="card-image carousel" id="carousel-dual-pcb-v1-5">
                 <div class="carousel-track"
-                  data-labels="Vista Top,Vista Bottom,Ruteo PCB">
+                  data-labels="Vista Top,Vista Bottom,Ruteo PCB,Demo v1.5">
                   <div class="carousel-slide">
                     <img src="images/projects/dual-endeffector/Top_V1.5.png" alt="DualEndEffector PCB v1.5 Top" loading="lazy" />
                   </div>
@@ -244,11 +245,15 @@
                   <div class="carousel-slide">
                     <img src="images/projects/dual-endeffector/Ruteo_V1.5.png" alt="DualEndEffector PCB v1.5 Ruteo" loading="lazy" />
                   </div>
+                  <div class="carousel-slide carousel-slide--video">
+                    <iframe src="https://drive.google.com/file/d/13gnSpxTNwQtoi7hbz3OeNzXqpaZSnoRE/preview" allow="autoplay" allowfullscreen loading="lazy"></iframe>
+                  </div>
                 </div>
                 <button class="carousel-btn carousel-prev" aria-label="Anterior">&#8249;</button>
                 <button class="carousel-btn carousel-next" aria-label="Siguiente">&#8250;</button>
                 <div class="carousel-dots">
                   <span class="carousel-dot active"></span>
+                  <span class="carousel-dot"></span>
                   <span class="carousel-dot"></span>
                   <span class="carousel-dot"></span>
                 </div>
@@ -358,8 +363,8 @@
             </div>
           </article>
 
-          <!-- DUAL END-EFFECTOR: Diseño Mecánico (Inventor) -->
-          <article class="project-card" id="proj-dual-3d" data-tags="inventor">
+          <!-- DUAL END-EFFECTOR: Diseño Mecánico (Inventor) — OCULTO TEMPORALMENTE -->
+          <!-- <article class="project-card" id="proj-dual-3d" data-tags="inventor">
             <div class="card-image carousel" id="carousel-dual-3d">
               <div class="carousel-track"
                 data-labels="Render 3D — Ensamblaje completo,Vista explosionada,Detalle gripper,Detalle taladro">
@@ -409,21 +414,24 @@
                 <a href="#proj-dual-sistema">Sistema completo →</a>
               </div>
             </div>
-          </article>
+          </article> -->
 
           <!-- DUAL END-EFFECTOR: Sistema Completo (Integración) -->
           <article class="project-card" id="proj-dual-sistema" data-tags="integracion">
             <div class="card-image carousel" id="carousel-dual-sistema">
               <div class="carousel-track"
-                data-labels="Sistema ensamblado — Vista general,PCB integrada en chasis,End-effector en brazo robótico">
-                <div class="carousel-slide carousel-slide--placeholder">
-                  <span class="placeholder-label">Sistema ensamblado · Próximamente</span>
+                data-labels="Integración v1.5,Demo — Integración v1.5,Integración v1,Demo — Integración v1">
+                <div class="carousel-slide">
+                  <img src="images/projects/dual-endeffector/Integracion_V1.5.png" alt="DualEndEffector Integración v1.5" loading="lazy" />
                 </div>
-                <div class="carousel-slide carousel-slide--placeholder">
-                  <span class="placeholder-label">PCB integrada en chasis · Próximamente</span>
+                <div class="carousel-slide carousel-slide--video">
+                  <iframe src="https://drive.google.com/file/d/13gnSpxTNwQtoi7hbz3OeNzXqpaZSnoRE/preview" allow="autoplay" allowfullscreen loading="lazy"></iframe>
                 </div>
-                <div class="carousel-slide carousel-slide--placeholder">
-                  <span class="placeholder-label">End-effector en brazo robótico · Próximamente</span>
+                <div class="carousel-slide">
+                  <img src="images/projects/dual-endeffector/Integracion_V1.png" alt="DualEndEffector Integración v1" loading="lazy" />
+                </div>
+                <div class="carousel-slide carousel-slide--video">
+                  <iframe src="https://drive.google.com/file/d/1GvmClSUzVqm_EvxHrU0mfiKqBYCQwple/preview" allow="autoplay" allowfullscreen loading="lazy"></iframe>
                 </div>
               </div>
               <button class="carousel-btn carousel-prev" aria-label="Anterior">&#8249;</button>
@@ -432,26 +440,28 @@
                 <span class="carousel-dot active"></span>
                 <span class="carousel-dot"></span>
                 <span class="carousel-dot"></span>
+                <span class="carousel-dot"></span>
               </div>
               <span class="card-status-badge">En desarrollo</span>
             </div>
-            <div class="carousel-caption">Sistema ensamblado — Vista general</div>
+            <div class="carousel-caption">Integración v1.5</div>
             <div class="card-body">
               <div class="card-tags">
                 <span class="tag-badge integracion">Integración</span>
                 <span class="tag-badge esp32">ESP32-C3</span>
-                <span class="tag-badge inventor">Inventor</span>
+                <span class="tag-badge inventor">3D</span>
+                <span class="tag-badge">KiCad</span>
               </div>
               <h3 class="card-title">DualEndEffector — Sistema Completo</h3>
               <p class="card-desc">
-                Integración del diseño electrónico (PCB KiCad) y el diseño mecánico (Inventor) en un sistema
-                funcional. End-effector dual montado en brazo robótico colaborativo con cambio automático
-                entre taladrado y sujeción, sin necesidad de sustituir el efector.
+                Integración completa sobre el brazo robótico <strong>Dobot Magician E6</strong>: diseño mecánico
+                3D del end-effector dual (Inventor), PCB de control (KiCad + ESP32-C3) y ensamblaje físico
+                final. Permite cambio automático entre taladrado y sujeción sin sustituir el efector.
               </p>
               <div class="card-meta">
+                <span>Dobot Magician E6</span>
                 <span>PCB + 3D</span>
                 <span>UNMSM · 2025</span>
-                <span>Automatización</span>
               </div>
               <div class="card-related">
                 Ver también:
@@ -505,6 +515,42 @@
                 <span>500 kHz</span>
                 <span>99% eficiencia</span>
                 <span>3.3V – 12V</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- ROBOT SEGUIDOR DE LÍNEAS -->
+          <article class="project-card" id="proj-robot-lineas" data-tags="autocad">
+            <div class="card-image carousel" id="carousel-robot-lineas">
+              <div class="carousel-track"
+                data-labels="Renderizado — Chasis AutoCAD">
+                <div class="carousel-slide">
+                  <img src="images/projects/robot-lineas/Render.jpg" alt="Robot Seguidor de Líneas — Chasis AutoCAD" loading="lazy" />
+                </div>
+              </div>
+              <button class="carousel-btn carousel-prev" aria-label="Anterior">&#8249;</button>
+              <button class="carousel-btn carousel-next" aria-label="Siguiente">&#8250;</button>
+              <div class="carousel-dots">
+                <span class="carousel-dot active"></span>
+              </div>
+            </div>
+            <div class="carousel-caption">Renderizado — Chasis AutoCAD</div>
+            <div class="card-body">
+              <div class="card-tags">
+                <span class="tag-badge autocad">AutoCAD</span>
+                <span class="tag-badge">Robótica</span>
+                <span class="tag-badge">Seguidor de líneas</span>
+              </div>
+              <h3 class="card-title">Robot Seguidor de Líneas — Chasis AutoCAD</h3>
+              <p class="card-desc">
+                Diseño completo del chasis de un robot seguidor de líneas en AutoCAD. Estructura
+                optimizada para alojar los motores, sensores infrarrojos y electrónica de control,
+                con geometría pensada para trayectorias precisas en pista.
+              </p>
+              <div class="card-meta">
+                <span>AutoCAD</span>
+                <span>Chasis personalizado</span>
+                <span>Seguidor de líneas</span>
               </div>
             </div>
           </article>
