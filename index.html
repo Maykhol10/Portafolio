@@ -3,275 +3,644 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Maykhol — PCB Designer</title>
-  <meta name="description" content="Portafolio de diseño de PCBs con KiCad — Maykhol" />
+  <title>Diosdado Maykhol Jurado Mulato - PCB Designer</title>
+  <meta name="description" content="Portafolio de diseno de PCBs con KiCad creado por Diosdado Maykhol Jurado Mulato." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
+  <a class="skip-link" href="#main-content">Saltar al contenido</a>
 
-  <!-- NAV -->
-  <nav id="navbar">
-    <div class="nav-container">
-      <a href="#hero" class="nav-logo">Maykhol<span class="accent">.</span></a>
-      <ul class="nav-links">
-        <li><a href="#about">Sobre mí</a></li>
-        <li><a href="#projects">Proyectos</a></li>
-        <li><a href="#contact">Contacto</a></li>
-        <li><a href="https://github.com/Maykhol10" target="_blank" class="btn-nav">GitHub</a></li>
-      </ul>
-      <button class="hamburger" id="hamburger" aria-label="Menu">
-        <span></span><span></span><span></span>
-      </button>
-    </div>
-  </nav>
+  <header class="site-header">
+    <nav id="navbar" aria-label="Navegacion principal">
+      <div class="nav-container">
+        <a href="#hero" class="nav-logo">Portafolio<span class="accent">.</span></a>
+        <ul class="nav-links" id="site-menu">
+          <li><a href="#about">Sobre mi</a></li>
+          <li><a href="#projects">Proyectos</a></li>
+          <li><a href="#contact">Contacto</a></li>
+          <li><a href="https://github.com/Maykhol10" target="_blank" rel="noreferrer" class="btn-nav">GitHub</a></li>
+        </ul>
+        <button class="hamburger" id="hamburger" aria-label="Abrir menu" aria-expanded="false" aria-controls="site-menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
 
-  <!-- HERO -->
-  <section id="hero">
-    <div class="hero-content">
-      <p class="hero-greeting">Hola, soy</p>
-      <h1 class="hero-name">Maykhol</h1>
-      <h2 class="hero-title">PCB Designer <span class="accent">|</span> KiCad</h2>
-      <p class="hero-desc">
-        Diseño circuitos impresos funcionales y optimizados usando KiCad.
-        Desde esquemáticos hasta Gerbers listos para fabricación.
-      </p>
-      <div class="hero-actions">
-        <a href="#projects" class="btn-primary">Ver proyectos</a>
-        <a href="#contact" class="btn-secondary">Contactar</a>
+  <main id="main-content">
+    <section id="hero" class="hero-section">
+      <div class="hero-inner">
+      <div class="hero-content">
+        <p class="hero-greeting">Hola, soy</p>
+        <h1 class="hero-name">Diosdado Maykhol<br><span class="hero-lastname">Jurado Mulato</span></h1>
+        <h2 class="hero-title">PCB Designer <span class="accent">|</span> KiCad</h2>
+        <p class="hero-desc">
+          Diseno circuitos impresos funcionales y optimizados, desde esquematicos claros
+          hasta archivos Gerber listos para fabricacion.
+        </p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn-primary">Ver proyectos</a>
+          <a href="#contact" class="btn-secondary">Contactar</a>
+        </div>
+        <div class="hero-tags" aria-label="Especialidades">
+          <span class="tag">KiCad</span>
+          <span class="tag">PCB Layout</span>
+          <span class="tag">Esquematicos</span>
+          <span class="tag">Gerbers</span>
+          <span class="tag">SMD / THT</span>
+        </div>
       </div>
-      <div class="hero-tags">
-        <span class="tag">KiCad</span>
-        <span class="tag">PCB Layout</span>
-        <span class="tag">Esquemáticos</span>
-        <span class="tag">Gerbers</span>
-        <span class="tag">SMD / THT</span>
-      </div>
-    </div>
-    <div class="hero-visual">
-      <div class="pcb-grid">
-        <div class="pcb-dot"></div><div class="pcb-dot"></div><div class="pcb-dot"></div>
-        <div class="pcb-dot"></div><div class="pcb-dot accent-dot"></div><div class="pcb-dot"></div>
-        <div class="pcb-dot"></div><div class="pcb-dot"></div><div class="pcb-dot"></div>
-      </div>
-    </div>
-  </section>
 
-  <!-- ABOUT -->
-  <section id="about">
-    <div class="container">
-      <h2 class="section-title">Sobre mí</h2>
-      <div class="about-grid">
-        <div class="about-text">
-          <p>
-            Soy un diseñador de PCBs con experiencia en <strong>KiCad</strong>, apasionado por
-            convertir ideas electrónicas en diseños físicos funcionales y bien optimizados.
+      <aside class="hero-visual" aria-label="Proyecto destacado">
+        <div class="hero-panel hero-panel--image">
+          <span class="panel-badge">Featured Work</span>
+          <img src="images/projects/agrosmart/Render_nobg.png" alt="Agrosmart — Render 3D KiCad" />
+          <div class="hero-panel-footer">
+            <p class="hero-panel-label">Agrosmart — Automatización Hidropónica</p>
+          </div>
+        </div>
+      </aside>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="container">
+        <div class="section-heading">
+          <p class="section-kicker">Perfil</p>
+          <h2 class="section-title">Sobre mi</h2>
+          <p class="section-intro">
+            Desarrollo placas pensadas para producirse con menos friccion, mejor documentacion
+            y decisiones tecnicas claras desde el inicio.
           </p>
-          <p>
-            Me especializo en diseño de circuitos para microcontroladores, sistemas de
-            alimentación, y comunicación inalámbrica (WiFi, Bluetooth, RF).
-          </p>
-          <p>
-            Cada diseño que realizo está pensado para ser fabricable, testeado y documentado correctamente.
-          </p>
         </div>
-        <div class="skills-grid">
-          <div class="skill-card">
-            <span class="skill-icon">⬡</span>
-            <h4>Herramientas</h4>
-            <ul>
-              <li>KiCad 7/8</li>
-              <li>LTspice</li>
-              <li>FreeCAD</li>
-            </ul>
-          </div>
-          <div class="skill-card">
-            <span class="skill-icon">⬡</span>
-            <h4>Tecnologías</h4>
-            <ul>
-              <li>SMD / THT</li>
-              <li>2-4 capas</li>
-              <li>High-speed signals</li>
-            </ul>
-          </div>
-          <div class="skill-card">
-            <span class="skill-icon">⬡</span>
-            <h4>Microcontroladores</h4>
-            <ul>
-              <li>ESP32 / ESP8266</li>
-              <li>STM32</li>
-              <li>ATmega / Arduino</li>
-            </ul>
-          </div>
-          <div class="skill-card">
-            <span class="skill-icon">⬡</span>
-            <h4>Entregables</h4>
-            <ul>
-              <li>Gerbers / Drill files</li>
-              <li>BOM completo</li>
-              <li>Pick & Place</li>
-            </ul>
+
+        <div class="about-grid">
+          <article class="about-text">
+            <p>
+              Soy un disenador de PCBs con experiencia en <strong>KiCad</strong>, enfocado en
+              convertir ideas electronicas en disenos fisicos robustos y bien optimizados.
+            </p>
+            <p>
+              Trabajo en placas para microcontroladores, fuentes de alimentacion y sistemas
+              inalambricos como WiFi, Bluetooth y RF.
+            </p>
+            <p>
+              Cada diseno busca equilibrio entre rendimiento electrico, facilidad de ensamblaje
+              y documentacion lista para fabricar.
+            </p>
+          </article>
+
+          <div class="about-sidebar">
+            <div class="summary-card">
+              <p class="summary-label">Lo que entrego</p>
+              <ul class="summary-list">
+                <li>Esquematico limpio y revisable</li>
+                <li>Layout orientado a manufactura</li>
+                <li>Gerbers, BOM y Pick &amp; Place</li>
+              </ul>
+            </div>
+
+            <div class="skills-grid">
+              <article class="skill-card">
+                <span class="skill-icon">01</span>
+                <h4>Herramientas</h4>
+                <ul>
+                  <li>KiCad 7/8</li>
+                  <li>LTspice</li>
+                  <li>FreeCAD</li>
+                </ul>
+              </article>
+              <article class="skill-card">
+                <span class="skill-icon">02</span>
+                <h4>Tecnologias</h4>
+                <ul>
+                  <li>SMD / THT</li>
+                  <li>2-4 capas</li>
+                  <li>High-speed signals</li>
+                </ul>
+              </article>
+              <article class="skill-card">
+                <span class="skill-icon">03</span>
+                <h4>Microcontroladores</h4>
+                <ul>
+                  <li>ESP32 / ESP8266</li>
+                  <li>STM32</li>
+                  <li>ATmega / Arduino</li>
+                </ul>
+              </article>
+              <article class="skill-card">
+                <span class="skill-icon">04</span>
+                <h4>Entregables</h4>
+                <ul>
+                  <li>Gerbers / Drill files</li>
+                  <li>BOM completo</li>
+                  <li>Pick &amp; Place</li>
+                </ul>
+              </article>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- PROJECTS -->
-  <section id="projects">
-    <div class="container">
-      <h2 class="section-title">Proyectos</h2>
-      <div class="filter-bar">
-        <button class="filter-btn active" data-filter="all">Todos</button>
-        <button class="filter-btn" data-filter="esp32">ESP32</button>
-        <button class="filter-btn" data-filter="power">Power</button>
-        <button class="filter-btn" data-filter="stm32">STM32</button>
-        <button class="filter-btn" data-filter="rf">RF / IoT</button>
-      </div>
-      <div class="projects-grid" id="projects-grid">
-
-        <!-- PROJECT CARD 1 -->
-        <div class="project-card" data-tags="esp32 rf">
-          <div class="card-image">
-            <img src="https://placehold.co/600x400/0d2137/00d4aa?text=ESP32+Dev+Board" alt="ESP32 Development Board PCB" loading="lazy" />
-            <div class="card-overlay">
-              <a href="https://github.com/Maykhol10" target="_blank" class="overlay-btn">Ver en GitHub</a>
-            </div>
-          </div>
-          <div class="card-body">
-            <div class="card-tags">
-              <span class="tag-badge esp32">ESP32</span>
-              <span class="tag-badge rf">WiFi/BT</span>
-            </div>
-            <h3 class="card-title">ESP32 Development Board</h3>
-            <p class="card-desc">
-              Placa de desarrollo personalizada basada en ESP32. Incluye regulador de voltaje,
-              conectores de expansión, LEDs de estado y botón de reset. Diseñada en 2 capas con KiCad.
-            </p>
-            <div class="card-meta">
-              <span>2 capas</span>
-              <span>SMD + THT</span>
-              <span>3.3V / 5V</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- PROJECT CARD 2 -->
-        <div class="project-card" data-tags="power">
-          <div class="card-image">
-            <img src="https://placehold.co/600x400/0d2137/00d4aa?text=Buck+Converter+5A" alt="Buck Converter PCB" loading="lazy" />
-            <div class="card-overlay">
-              <a href="https://github.com/Maykhol10" target="_blank" class="overlay-btn">Ver en GitHub</a>
-            </div>
-          </div>
-          <div class="card-body">
-            <div class="card-tags">
-              <span class="tag-badge power">Power</span>
-              <span class="tag-badge">SMD</span>
-            </div>
-            <h3 class="card-title">Buck Converter 5A</h3>
-            <p class="card-desc">
-              Convertidor buck de alta eficiencia basado en LM2596. Entrada 7-35V, salida ajustable
-              1.25-30V hasta 5A. Diseño compacto con planos de cobre optimizados.
-            </p>
-            <div class="card-meta">
-              <span>2 capas</span>
-              <span>SMD</span>
-              <span>5A / 95% eficiencia</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- PROJECT CARD 3 -->
-        <div class="project-card" data-tags="stm32">
-          <div class="card-image">
-            <img src="https://placehold.co/600x400/0d2137/00d4aa?text=STM32+Motor+Controller" alt="STM32 Motor Controller PCB" loading="lazy" />
-            <div class="card-overlay">
-              <a href="https://github.com/Maykhol10" target="_blank" class="overlay-btn">Ver en GitHub</a>
-            </div>
-          </div>
-          <div class="card-body">
-            <div class="card-tags">
-              <span class="tag-badge stm32">STM32</span>
-              <span class="tag-badge power">Motor</span>
-            </div>
-            <h3 class="card-title">STM32 Motor Controller</h3>
-            <p class="card-desc">
-              Controlador de motores DC con STM32F103. Driver DRV8833 integrado para 2 motores
-              independientes. Comunicación UART y I2C para sensores externos.
-            </p>
-            <div class="card-meta">
-              <span>2 capas</span>
-              <span>SMD</span>
-              <span>12V / 2A por canal</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- PROJECT CARD 4 -->
-        <div class="project-card" data-tags="esp32 rf">
-          <div class="card-image">
-            <img src="https://placehold.co/600x400/0d2137/00d4aa?text=IoT+Sensor+Node" alt="IoT Sensor Node PCB" loading="lazy" />
-            <div class="card-overlay">
-              <a href="https://github.com/Maykhol10" target="_blank" class="overlay-btn">Ver en GitHub</a>
-            </div>
-          </div>
-          <div class="card-body">
-            <div class="card-tags">
-              <span class="tag-badge esp32">ESP32</span>
-              <span class="tag-badge rf">IoT</span>
-            </div>
-            <h3 class="card-title">IoT Sensor Node</h3>
-            <p class="card-desc">
-              Nodo sensor IoT con ESP32-C3 de bajo consumo. Sensores de temperatura, humedad y
-              presión integrados. Batería LiPo con cargador TP4056 y modo deep sleep.
-            </p>
-            <div class="card-meta">
-              <span>2 capas</span>
-              <span>SMD</span>
-              <span>Battery powered</span>
-            </div>
-          </div>
-        </div>
-
-      </div><!-- /projects-grid -->
-    </div>
-  </section>
-
-  <!-- CONTACT -->
-  <section id="contact">
-    <div class="container">
-      <h2 class="section-title">Contacto</h2>
-      <p class="contact-desc">
-        ¿Tienes un proyecto de PCB en mente? Hablemos.
-      </p>
-      <div class="contact-links">
-        <a href="mailto:diosdadomaykhol.jm@gmail.com" class="contact-card">
-          <span class="contact-icon">✉</span>
+    <section id="projects">
+      <div class="container">
+        <div class="section-heading section-heading-row">
           <div>
-            <h4>Email</h4>
-            <p>diosdadomaykhol.jm@gmail.com</p>
+            <p class="section-kicker">Portafolio</p>
+            <h2 class="section-title">Proyectos destacados</h2>
+            <p class="section-intro">
+              Una muestra de placas enfocadas en conectividad, potencia y control embebido.
+            </p>
           </div>
-        </a>
-        <a href="https://github.com/Maykhol10" target="_blank" class="contact-card">
-          <span class="contact-icon">⌥</span>
-          <div>
-            <h4>GitHub</h4>
-            <p>github.com/Maykhol10</p>
-          </div>
-        </a>
-      </div>
-    </div>
-  </section>
+          <p class="project-counter"><span id="project-count">8</span> proyectos visibles</p>
+        </div>
 
-  <!-- FOOTER -->
+        <div class="filter-bar" aria-label="Filtrar proyectos">
+          <button class="filter-btn active" data-filter="all">Todos</button>
+          <button class="filter-btn" data-filter="kicad">KiCad</button>
+          <button class="filter-btn" data-filter="power">Power</button>
+          <button class="filter-btn" data-filter="inventor">Inventor / 3D</button>
+          <button class="filter-btn" data-filter="integracion">Integración</button>
+          <button class="filter-btn" data-filter="inversa">Ing. Inversa</button>
+          <button class="filter-btn" data-filter="proteus">Proteus</button>
+        </div>
+
+        <div class="projects-grid" id="projects-grid">
+
+          <article class="project-card" id="proj-agrosmart" data-tags="kicad">
+            <div class="card-image carousel" id="carousel-agrosmart">
+              <div class="carousel-track"
+                data-labels="Render 3D — Blender,Vista Top — KiCad,Vista Bottom — KiCad,Ruteo — Ambas capas">
+                <div class="carousel-slide">
+                  <img src="images/projects/agrosmart/Render.png" alt="Agrosmart Render" loading="lazy" />
+                </div>
+                <div class="carousel-slide">
+                  <img src="images/projects/agrosmart/Top.png" alt="Agrosmart Top view" loading="lazy" />
+                </div>
+                <div class="carousel-slide">
+                  <img src="images/projects/agrosmart/Button.png" alt="Agrosmart Bottom view" loading="lazy" />
+                </div>
+                <div class="carousel-slide">
+                  <img src="images/projects/agrosmart/Ruteo.png" alt="Agrosmart Ruteo PCB" loading="lazy" />
+                </div>
+              </div>
+              <button class="carousel-btn carousel-prev" aria-label="Anterior">&#8249;</button>
+              <button class="carousel-btn carousel-next" aria-label="Siguiente">&#8250;</button>
+              <div class="carousel-dots">
+                <span class="carousel-dot active"></span>
+                <span class="carousel-dot"></span>
+                <span class="carousel-dot"></span>
+                <span class="carousel-dot"></span>
+              </div>
+              <span class="card-status-badge">En desarrollo</span>
+            </div>
+            <div class="carousel-caption">Render 3D — Blender</div>
+            <div class="card-body">
+              <div class="card-tags">
+                <span class="tag-badge">KiCad</span>
+                <span class="tag-badge esp32">ESP32</span>
+                <span class="tag-badge rf">IoT / MQTT</span>
+              </div>
+              <h3 class="card-title">🌱 Agrosmart — Automatización Hidropónica</h3>
+              <p class="card-desc">
+                Sistema de monitoreo y control para agricultura hidropónica con arquitectura IoT escalable.
+                Sensores de pH, EC, temperatura y nivel con firmware embebido y visualización remota.
+              </p>
+              <div class="card-meta">
+                <span>ESP32</span>
+                <span>MQTT</span>
+                <span>pH / EC / Temp</span>
+              </div>
+              <a href="https://github.com/Maykhol10" target="_blank" rel="noreferrer" class="card-github-link">Ver en GitHub →</a>
+            </div>
+          </article>
+
+
+          <!-- DUAL END-EFFECTOR: PCB de Control (KiCad) -->
+          <article class="project-card" id="proj-dual-pcb" data-tags="kicad">
+
+            <div class="version-switcher">
+              <button class="version-btn active" data-version="v1.5">V1.5</button>
+              <span class="version-sep">/</span>
+              <button class="version-btn" data-version="v1">V1</button>
+            </div>
+
+            <!-- V2 -->
+            <!-- V1 -->
+            <!-- V1.5 -->
+            <div class="version-carousel active" data-version="v1.5">
+              <div class="card-image carousel" id="carousel-dual-pcb-v1-5">
+                <div class="carousel-track"
+                  data-labels="Vista Top,Vista Bottom,Ruteo PCB">
+                  <div class="carousel-slide">
+                    <img src="images/projects/dual-endeffector/Top_V1.5.png" alt="DualEndEffector PCB v1.5 Top" loading="lazy" />
+                  </div>
+                  <div class="carousel-slide">
+                    <img src="images/projects/dual-endeffector/Button_V1.5.png" alt="DualEndEffector PCB v1.5 Bottom" loading="lazy" />
+                  </div>
+                  <div class="carousel-slide">
+                    <img src="images/projects/dual-endeffector/Ruteo_V1.5.png" alt="DualEndEffector PCB v1.5 Ruteo" loading="lazy" />
+                  </div>
+                </div>
+                <button class="carousel-btn carousel-prev" aria-label="Anterior">&#8249;</button>
+                <button class="carousel-btn carousel-next" aria-label="Siguiente">&#8250;</button>
+                <div class="carousel-dots">
+                  <span class="carousel-dot active"></span>
+                  <span class="carousel-dot"></span>
+                  <span class="carousel-dot"></span>
+                </div>
+              </div>
+              <div class="carousel-caption">Vista Top</div>
+            </div>
+
+            <div class="version-carousel" data-version="v1">
+              <div class="card-image carousel" id="carousel-dual-pcb-v1">
+                <div class="carousel-track"
+                  data-labels="Render 3D,Ruteo PCB">
+                  <div class="carousel-slide">
+                    <img src="images/projects/dual-endeffector/Render_V1.png" alt="DualEndEffector PCB v1 Render 3D" loading="lazy" />
+                  </div>
+                  <div class="carousel-slide">
+                    <img src="images/projects/dual-endeffector/Ruteo_V1.png" alt="DualEndEffector PCB v1 Ruteo" loading="lazy" />
+                  </div>
+                </div>
+                <button class="carousel-btn carousel-prev" aria-label="Anterior">&#8249;</button>
+                <button class="carousel-btn carousel-next" aria-label="Siguiente">&#8250;</button>
+                <div class="carousel-dots">
+                  <span class="carousel-dot active"></span>
+                  <span class="carousel-dot"></span>
+                </div>
+              </div>
+              <div class="carousel-caption">Render 3D</div>
+            </div>
+
+            <div class="card-body">
+              <div class="card-tags">
+                <span class="tag-badge">KiCad</span>
+                <span class="tag-badge esp32">ESP32-C3</span>
+                <span class="tag-badge power">Control</span>
+              </div>
+              <h3 class="card-title">DualEndEffector — PCB de Control</h3>
+              <p class="card-desc">
+                PCB dedicada al control de actuadores del end-effector dual (taladro/atornillador + gripper).
+                Dos revisiones de diseño con mejoras en ruteo y gestión de potencia. Diseñada en KiCad con
+                ESP32-C3 Supermini.
+              </p>
+              <div class="card-meta">
+                <span>ESP32-C3 Supermini</span>
+                <span>v1 → v1.5</span>
+                <span>SMD</span>
+              </div>
+              <div class="card-related">
+                Ver también:
+                <a href="#proj-dual-3d">Diseño 3D en Inventor →</a>
+                <a href="#proj-dual-sistema">Sistema completo →</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- ROBOT ORUGA -->
+          <article class="project-card" id="proj-robot-oruga" data-tags="inventor">
+            <div class="card-image carousel" id="carousel-robot-oruga">
+              <div class="carousel-track"
+                data-labels="Render 3D — Inventor,Piezas cortadas por láser,Corte láser — CNC,Simulación,Demo — Visión Artificial">
+                <div class="carousel-slide">
+                  <img src="images/projects/robot-oruga/Render.png" alt="Robot Oruga Render 3D Inventor" loading="lazy" />
+                </div>
+                <div class="carousel-slide">
+                  <img src="images/projects/robot-oruga/Laser.jpg" alt="Piezas de acero cortadas por láser" loading="lazy" />
+                </div>
+                <div class="carousel-slide carousel-slide--video">
+                  <iframe src="https://drive.google.com/file/d/1LHIjAreI9-UieKvpAyS3MUQNjG855VvG/preview" allow="autoplay" allowfullscreen loading="lazy"></iframe>
+                </div>
+                <div class="carousel-slide carousel-slide--video">
+                  <iframe src="https://drive.google.com/file/d/18jeOLc6NHOBT70N5YUqYWabK7nXmjur9/preview" allow="autoplay" allowfullscreen loading="lazy"></iframe>
+                </div>
+                <div class="carousel-slide carousel-slide--video">
+                  <iframe src="https://drive.google.com/file/d/1-vI2ImOXf7GKYEy7zqhgtWgavvvzq9Y7/preview" allow="autoplay" allowfullscreen loading="lazy"></iframe>
+                </div>
+              </div>
+              <button class="carousel-btn carousel-prev" aria-label="Anterior">&#8249;</button>
+              <button class="carousel-btn carousel-next" aria-label="Siguiente">&#8250;</button>
+              <div class="carousel-dots">
+                <span class="carousel-dot active"></span>
+                <span class="carousel-dot"></span>
+                <span class="carousel-dot"></span>
+                <span class="carousel-dot"></span>
+                <span class="carousel-dot"></span>
+              </div>
+            </div>
+            <div class="carousel-caption">Render 3D — Inventor</div>
+            <div class="card-body">
+              <div class="card-tags">
+                <span class="tag-badge inventor">Inventor</span>
+                <span class="tag-badge">Robótica</span>
+                <span class="tag-badge">Visión Artificial</span>
+                <span class="tag-badge stm32">RPi 5</span>
+              </div>
+              <h3 class="card-title">Robot Oruga — Recolector de Residuos</h3>
+              <p class="card-desc">
+                Diseño y simulación de robot tipo oruga para recolección autónoma de residuos
+                en playas del litoral peruano. Chasis diseñado en chapa metálica en Autodesk
+                Inventor y fabricado mediante CNC corte por láser. Procesamiento con
+                Raspberry Pi 5 8GB e integra visión artificial para detección de residuos.
+              </p>
+              <div class="card-meta">
+                <span>Inventor</span>
+                <span>Chapa metálica</span>
+                <span>CNC · Corte láser</span>
+                <span>Raspberry Pi 5 8GB</span>
+                <span>Visión Artificial</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- DUAL END-EFFECTOR: Diseño Mecánico (Inventor) -->
+          <article class="project-card" id="proj-dual-3d" data-tags="inventor">
+            <div class="card-image carousel" id="carousel-dual-3d">
+              <div class="carousel-track"
+                data-labels="Render 3D — Ensamblaje completo,Vista explosionada,Detalle gripper,Detalle taladro">
+                <div class="carousel-slide carousel-slide--placeholder">
+                  <span class="placeholder-label">Render 3D — Ensamblaje · Próximamente</span>
+                </div>
+                <div class="carousel-slide carousel-slide--placeholder">
+                  <span class="placeholder-label">Vista explosionada · Próximamente</span>
+                </div>
+                <div class="carousel-slide carousel-slide--placeholder">
+                  <span class="placeholder-label">Detalle gripper · Próximamente</span>
+                </div>
+                <div class="carousel-slide carousel-slide--placeholder">
+                  <span class="placeholder-label">Detalle taladro · Próximamente</span>
+                </div>
+              </div>
+              <button class="carousel-btn carousel-prev" aria-label="Anterior">&#8249;</button>
+              <button class="carousel-btn carousel-next" aria-label="Siguiente">&#8250;</button>
+              <div class="carousel-dots">
+                <span class="carousel-dot active"></span>
+                <span class="carousel-dot"></span>
+                <span class="carousel-dot"></span>
+                <span class="carousel-dot"></span>
+              </div>
+              <span class="card-status-badge">En desarrollo</span>
+            </div>
+            <div class="carousel-caption">Render 3D — Ensamblaje completo</div>
+            <div class="card-body">
+              <div class="card-tags">
+                <span class="tag-badge inventor">Inventor</span>
+                <span class="tag-badge">3D</span>
+                <span class="tag-badge">Robótica</span>
+              </div>
+              <h3 class="card-title">DualEndEffector — Diseño Mecánico 3D</h3>
+              <p class="card-desc">
+                Modelado 3D del end-effector dual para brazo robótico colaborativo. Integra taladro/atornillador
+                y gripper con cambio automático entre funciones. Diseñado en Autodesk Inventor.
+              </p>
+              <div class="card-meta">
+                <span>Inventor</span>
+                <span>Ensamblaje</span>
+                <span>Colaborativo</span>
+              </div>
+              <div class="card-related">
+                Ver también:
+                <a href="#proj-dual-pcb">PCB de Control en KiCad →</a>
+                <a href="#proj-dual-sistema">Sistema completo →</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- DUAL END-EFFECTOR: Sistema Completo (Integración) -->
+          <article class="project-card" id="proj-dual-sistema" data-tags="integracion">
+            <div class="card-image carousel" id="carousel-dual-sistema">
+              <div class="carousel-track"
+                data-labels="Sistema ensamblado — Vista general,PCB integrada en chasis,End-effector en brazo robótico">
+                <div class="carousel-slide carousel-slide--placeholder">
+                  <span class="placeholder-label">Sistema ensamblado · Próximamente</span>
+                </div>
+                <div class="carousel-slide carousel-slide--placeholder">
+                  <span class="placeholder-label">PCB integrada en chasis · Próximamente</span>
+                </div>
+                <div class="carousel-slide carousel-slide--placeholder">
+                  <span class="placeholder-label">End-effector en brazo robótico · Próximamente</span>
+                </div>
+              </div>
+              <button class="carousel-btn carousel-prev" aria-label="Anterior">&#8249;</button>
+              <button class="carousel-btn carousel-next" aria-label="Siguiente">&#8250;</button>
+              <div class="carousel-dots">
+                <span class="carousel-dot active"></span>
+                <span class="carousel-dot"></span>
+                <span class="carousel-dot"></span>
+              </div>
+              <span class="card-status-badge">En desarrollo</span>
+            </div>
+            <div class="carousel-caption">Sistema ensamblado — Vista general</div>
+            <div class="card-body">
+              <div class="card-tags">
+                <span class="tag-badge integracion">Integración</span>
+                <span class="tag-badge esp32">ESP32-C3</span>
+                <span class="tag-badge inventor">Inventor</span>
+              </div>
+              <h3 class="card-title">DualEndEffector — Sistema Completo</h3>
+              <p class="card-desc">
+                Integración del diseño electrónico (PCB KiCad) y el diseño mecánico (Inventor) en un sistema
+                funcional. End-effector dual montado en brazo robótico colaborativo con cambio automático
+                entre taladrado y sujeción, sin necesidad de sustituir el efector.
+              </p>
+              <div class="card-meta">
+                <span>PCB + 3D</span>
+                <span>UNMSM · 2025</span>
+                <span>Automatización</span>
+              </div>
+              <div class="card-related">
+                Ver también:
+                <a href="#proj-dual-pcb">PCB de Control →</a>
+                <a href="#proj-dual-3d">Diseño 3D →</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- ING. INVERSA: Mini 560 Step-Down -->
+          <article class="project-card" id="proj-mini560" data-tags="inversa power kicad">
+            <div class="card-image carousel" id="carousel-mini560">
+              <div class="carousel-track"
+                data-labels="Render 3D — KiCad,Vista Top — KiCad,Vista Bottom — KiCad,Esquemático — Próximamente">
+                <div class="carousel-slide">
+                  <img src="images/projects/mini560/Render.png" alt="Mini 560 Render 3D KiCad" loading="lazy" />
+                </div>
+                <div class="carousel-slide">
+                  <img src="images/projects/mini560/TOP.png" alt="Mini 560 Vista Top KiCad" loading="lazy" />
+                </div>
+                <div class="carousel-slide">
+                  <img src="images/projects/mini560/BUTTON.png" alt="Mini 560 Vista Bottom KiCad" loading="lazy" />
+                </div>
+                <div class="carousel-slide carousel-slide--placeholder">
+                  <span class="placeholder-label">Esquemático reconstruido · Próximamente</span>
+                </div>
+              </div>
+              <button class="carousel-btn carousel-prev" aria-label="Anterior">&#8249;</button>
+              <button class="carousel-btn carousel-next" aria-label="Siguiente">&#8250;</button>
+              <div class="carousel-dots">
+                <span class="carousel-dot active"></span>
+                <span class="carousel-dot"></span>
+                <span class="carousel-dot"></span>
+                <span class="carousel-dot"></span>
+              </div>
+            </div>
+            <div class="carousel-caption">Módulo físico — Mini 560</div>
+            <div class="card-body">
+              <div class="card-tags">
+                <span class="tag-badge inversa">Ing. Inversa</span>
+                <span class="tag-badge power">Power</span>
+                <span class="tag-badge">KiCad</span>
+              </div>
+              <h3 class="card-title">Mini 560 — Ingeniería Inversa PCB</h3>
+              <p class="card-desc">
+                Reconstrucción completa del regulador step-down Mini 560 mediante ingeniería inversa.
+                Esquemático y layout documentados en KiCad a partir del módulo físico. Rectificación
+                sincrónica a 500 kHz con eficiencia del 99%.
+              </p>
+              <div class="card-meta">
+                <span>500 kHz</span>
+                <span>99% eficiencia</span>
+                <span>3.3V – 12V</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROTEUS: Registro de desplazamiento -->
+          <article class="project-card" id="proj-registro" data-tags="proteus">
+            <div class="card-image">
+              <img src="assets/proteus/registro-thumb.jpg" alt="Registro de Desplazamiento TTL esquemático" loading="lazy" />
+              <div class="card-overlay">
+                <a href="assets/proteus/Registro de desplazamiento - TTL.PDF" target="_blank" rel="noreferrer" class="overlay-btn">Ver esquemático</a>
+              </div>
+            </div>
+            <div class="card-body">
+              <div class="card-tags">
+                <span class="tag-badge proteus">Proteus</span>
+                <span class="tag-badge">TTL</span>
+              </div>
+              <h3 class="card-title">Registro de Desplazamiento — TTL</h3>
+              <p class="card-desc">
+                Registro de desplazamiento bidireccional con display de 16 segmentos mostrando texto, LEDs indicadores y generador de pulsos con 555. Lógica TTL serie 74xx.
+              </p>
+              <div class="card-meta">
+                <span>74194</span>
+                <span>7476</span>
+                <span>NE555</span>
+              </div>
+              <a href="assets/proteus/Registro de desplazamiento - TTL.PDF" target="_blank" rel="noreferrer" class="card-github-link">Ver esquemático completo (PDF) →</a>
+            </div>
+          </article>
+
+          <!-- PROTEUS: Reloj digital con alarma -->
+          <article class="project-card" id="proj-reloj" data-tags="proteus">
+            <div class="card-image">
+              <img src="assets/proteus/reloj-thumb.jpg" alt="Reloj Digital con Alarma TTL esquemático" loading="lazy" />
+              <div class="card-overlay">
+                <a href="assets/proteus/Reloj digital con alarma - TTL.PDF" target="_blank" rel="noreferrer" class="overlay-btn">Ver esquemático</a>
+              </div>
+            </div>
+            <div class="card-body">
+              <div class="card-tags">
+                <span class="tag-badge proteus">Proteus</span>
+                <span class="tag-badge">TTL</span>
+              </div>
+              <h3 class="card-title">Reloj Digital con Alarma — TTL</h3>
+              <p class="card-desc">
+                Reloj digital implementado con lógica TTL, display de 7 segmentos, contadores y sistema de alarma configurable. Diseñado y simulado en Proteus.
+              </p>
+              <div class="card-meta">
+                <span>TTL 74xx</span>
+                <span>7 segmentos</span>
+                <span>Alarma</span>
+              </div>
+              <a href="assets/proteus/Reloj digital con alarma - TTL.PDF" target="_blank" rel="noreferrer" class="card-github-link">Ver esquemático completo (PDF) →</a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container contact-layout">
+        <div class="section-heading">
+          <p class="section-kicker">Encuéntrame en</p>
+          <h2 class="section-title">Mi trabajo en la red</h2>
+          <p class="section-intro">
+            Repositorios, proyectos y diseños disponibles para revisar. Todo lo que ves aquí tiene archivos detrás.
+          </p>
+        </div>
+
+        <div class="contact-links">
+          <a href="https://wa.me/51925731327" target="_blank" rel="noreferrer" class="contact-card">
+            <span class="contact-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            </span>
+            <div>
+              <h4>WhatsApp</h4>
+              <p>+51 925 731 327</p>
+            </div>
+          </a>
+          <a href="mailto:diosdadomaykhol.jm@gmail.com" class="contact-card">
+            <span class="contact-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+            </span>
+            <div>
+              <h4>Email</h4>
+              <p>diosdadomaykhol.jm@gmail.com</p>
+            </div>
+          </a>
+          <a href="https://github.com/Maykhol10" target="_blank" rel="noreferrer" class="contact-card">
+            <span class="contact-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+            </span>
+            <div>
+              <h4>GitHub</h4>
+              <p>github.com/Maykhol10</p>
+            </div>
+          </a>
+          <a href="https://www.electrofy.com.pe/" target="_blank" rel="noreferrer" class="contact-card">
+            <span class="contact-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+            </span>
+            <div>
+              <h4>Sitio Web</h4>
+              <p>electrofy.com.pe</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
   <footer>
     <div class="container">
-      <p>Diseñado y construido por <span class="accent">Maykhol</span> — KiCad PCB Designer</p>
+      <p>Disenado y construido por <span class="accent">Diosdado Maykhol Jurado Mulato</span> - KiCad PCB Designer</p>
       <p class="footer-sub">Hecho con HTML, CSS y muchos Gerbers.</p>
     </div>
   </footer>
+
+  <!-- CURSOR TOOLTIP -->
+  <div id="cursor-tip" class="cursor-tip">Click para ampliar</div>
+
+  <!-- LIGHTBOX -->
+  <div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="Visor de imagen">
+    <button class="lightbox-close" id="lightbox-close" aria-label="Cerrar">&#10005;</button>
+    <button class="lightbox-prev" id="lightbox-prev" aria-label="Imagen anterior">&#8249;</button>
+    <button class="lightbox-next" id="lightbox-next" aria-label="Imagen siguiente">&#8250;</button>
+    <div class="lightbox-content">
+      <img id="lightbox-img" src="" alt="" />
+      <div class="lightbox-meta">
+        <span class="lightbox-project" id="lightbox-project"></span>
+        <span class="lightbox-label" id="lightbox-label"></span>
+        <span class="lightbox-hint">scroll para zoom · doble clic para resetear</span>
+      </div>
+    </div>
+  </div>
 
   <script src="js/main.js"></script>
 </body>
