@@ -231,6 +231,11 @@ button { font: inherit; }
 }
 .btn-secondary:hover { border-color: var(--accent); transform: translateY(-2px); }
 .hero-tags { display: flex; gap: 10px; flex-wrap: wrap; }
+.hero-stacks { grid-column: 1 / -1; display: flex; flex-direction: row; align-items: center; justify-content: flex-start; gap: 2rem; flex-wrap: nowrap; padding: 0 40px 1.5rem; }
+.hero-stack-group { display: flex; flex-direction: column; gap: 0.5rem; }
+.hero-stack-row { display: flex; flex-direction: row; align-items: center; gap: 1rem; }
+.hero-stack-label { font-size: 0.68rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--text-muted); white-space: nowrap; }
+.hero-stack-divider { color: var(--border); font-size: 2.5rem; margin: 0 0.5rem; line-height: 1; }
 .hero-tools-label { font-size: 0.72rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--text-muted); margin-bottom: 0.75rem; }
 .hero-tools { display: flex; gap: 1.5rem; flex-wrap: wrap; align-items: center; margin-top: 0.5rem; }
 .hero-tool-item { display: flex; flex-direction: column; align-items: center; gap: 0.35rem; opacity: 0.7; transition: opacity 0.2s ease, transform 0.2s ease; }
