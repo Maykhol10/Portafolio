@@ -850,6 +850,7 @@ button { font: inherit; }
 .tag-badge.integracion  { background: rgba(234,179,8,0.13);  color: #eab308;  border: 1px solid rgba(234,179,8,0.3); }
 .tag-badge.inversa      { background: rgba(239,68,68,0.12);  color: #ef4444;  border: 1px solid rgba(239,68,68,0.3); }
 .tag-badge.autocad      { background: rgba(0,188,212,0.12);  color: #00bcd4;  border: 1px solid rgba(0,188,212,0.3); }
+.tag-badge.ia           { background: rgba(139,92,246,0.13); color: #8b5cf6;  border: 1px solid rgba(139,92,246,0.3); }
 
 .card-pdf-preview {
   background: linear-gradient(135deg, #0d1b2a 0%, #112240 100%);
