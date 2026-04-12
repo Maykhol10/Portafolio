@@ -1125,17 +1125,21 @@ footer p {
     padding: 40px 24px 40px;
     min-height: auto;
   }
-  .hero-visual { display: none; }
+  .hero-visual { display: none !important; }
   .hero-stacks {
-    grid-column: 1 / -1;
-    flex-wrap: wrap;
+    display: flex !important;
+    flex-wrap: wrap !important;
+    flex-direction: row;
     gap: 1.2rem;
     padding: 0 24px 1.5rem;
     justify-content: flex-start;
+    max-width: 100%;
+    overflow: hidden;
+    grid-column: 1;
   }
-  .hero-stack-group { flex-shrink: 0; }
-  .hero-stack-row { flex-wrap: wrap; gap: 0.75rem; }
-  .hero-stack-divider { display: none; }
+  .hero-stack-group { flex-shrink: 0; max-width: 100%; }
+  .hero-stack-row { flex-wrap: wrap; gap: 0.6rem; }
+  .hero-stack-divider { display: none !important; }
   .about-grid,
   .contact-links {
     grid-template-columns: 1fr;
