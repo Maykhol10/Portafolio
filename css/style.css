@@ -156,6 +156,7 @@ button { font: inherit; }
 /* ===== HERO ===== */
 #hero {
   position: relative;
+  overflow: hidden;
   background-image:
     linear-gradient(to right, rgba(13,17,23,0.62) 40%, rgba(13,17,23,0.30)),
     url('../assets/hero-bg.gif');
@@ -1126,9 +1127,11 @@ footer p {
   }
   .hero-visual { display: none; }
   .hero-stacks {
+    grid-column: 1 / -1;
     flex-wrap: wrap;
     gap: 1.2rem;
     padding: 0 24px 1.5rem;
+    justify-content: flex-start;
   }
   .hero-stack-group { flex-shrink: 0; }
   .hero-stack-row { flex-wrap: wrap; gap: 0.75rem; }
@@ -1140,6 +1143,7 @@ footer p {
   .hero-stats {
     grid-template-columns: 1fr;
   }
+  .hero-panel--image img { width: 100%; }
 }
 
 @media (max-width: 768px) {
