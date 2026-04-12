@@ -976,6 +976,11 @@ button { font: inherit; }
   color: #22c55e;
   border-color: rgba(34, 197, 94, 0.4);
 }
+.card-status-badge--pending {
+  background: rgba(56, 189, 248, 0.15);
+  color: #38bdf8;
+  border-color: rgba(56, 189, 248, 0.4);
+}
 .card-image img {
   width: 100%;
   height: 100%;
