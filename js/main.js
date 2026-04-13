@@ -276,10 +276,10 @@ revealItems.forEach((item) => {
 // ===== TYPEWRITER =====
 const typingEl = document.getElementById('typing-text');
 const words = [
-  'Sistemas Embebidos e IoT',
-  'Diseño de PCBs',
-  'Robótica e IA',
-  'Modelado 3D',
+  'Embedded Systems Engineer',
+  'IoT Developer',
+  'Hardware Designer',
+  'Edge AI & Robotics',
 ];
 let wordIdx = 0, charIdx = 0, deleting = false;
 
