@@ -197,7 +197,25 @@ button { font: inherit; }
   font-size: clamp(1.2rem, 3vw, 1.9rem);
   font-weight: 400;
   color: var(--text-muted);
+  margin-bottom: 12px;
+}
+.hero-typing {
+  font-size: clamp(0.95rem, 2vw, 1.1rem);
+  font-family: 'JetBrains Mono', monospace;
+  color: var(--text-muted);
   margin-bottom: 24px;
+  min-height: 1.6em;
+}
+.typing-prefix { color: var(--text-muted); }
+#typing-text { color: var(--accent); font-weight: 500; }
+.typing-cursor {
+  color: var(--accent);
+  animation: blink 0.75s step-end infinite;
+  font-weight: 300;
+}
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0; }
 }
 .hero-desc {
   max-width: 560px;

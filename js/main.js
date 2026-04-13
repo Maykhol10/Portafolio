@@ -272,3 +272,37 @@ revealItems.forEach((item) => {
   item.style.transition = 'opacity 0.55s ease, transform 0.55s ease';
   observer.observe(item);
 });
+
+// ===== TYPEWRITER =====
+const typingEl = document.getElementById('typing-text');
+const words = [
+  'Embedded Systems IoT',
+  'Diseño de PCBs',
+  'Firmware ESP32',
+  'Robótica e IA',
+  'Modelado 3D',
+];
+let wordIdx = 0, charIdx = 0, deleting = false;
+
+function type() {
+  const word = words[wordIdx];
+  if (!deleting) {
+    typingEl.textContent = word.slice(0, ++charIdx);
+    if (charIdx === word.length) {
+      deleting = true;
+      setTimeout(type, 1800);
+      return;
+    }
+  } else {
+    typingEl.textContent = word.slice(0, --charIdx);
+    if (charIdx === 0) {
+      deleting = false;
+      wordIdx = (wordIdx + 1) % words.length;
+      setTimeout(type, 400);
+      return;
+    }
+  }
+  setTimeout(type, deleting ? 45 : 80);
+}
+
+type();
