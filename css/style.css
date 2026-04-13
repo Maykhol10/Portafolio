@@ -117,6 +117,12 @@ section + section {
   background-clip: padding-box, border-box;
 }
 
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
 /* ===== THEME TOGGLE ===== */
 .theme-toggle {
   background: none;
