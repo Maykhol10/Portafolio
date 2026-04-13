@@ -1129,7 +1129,7 @@ button { font: inherit; }
   border-left: 2px solid var(--border);
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 20px;
 }
 .timeline-item {
   position: relative;
@@ -1149,7 +1149,7 @@ button { font: inherit; }
   background: var(--card-bg);
   border: 1px solid var(--border);
   border-radius: var(--radius-lg);
-  padding: 24px 28px;
+  padding: 16px 20px;
   transition: border-color var(--transition);
 }
 .timeline-content:hover { border-color: var(--accent); }
@@ -1157,8 +1157,8 @@ button { font: inherit; }
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  gap: 16px;
-  margin-bottom: 16px;
+  gap: 12px;
+  margin-bottom: 10px;
   flex-wrap: wrap;
 }
 .timeline-role {
@@ -1180,10 +1180,10 @@ button { font: inherit; }
 .timeline-list {
   list-style: none;
   padding: 0;
-  margin: 0 0 16px;
+  margin: 0 0 10px;
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 5px;
 }
 .timeline-list li {
   font-size: 0.88rem;
