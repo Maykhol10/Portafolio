@@ -276,11 +276,9 @@ revealItems.forEach((item) => {
 // ===== TYPEWRITER =====
 const typingEl = document.getElementById('typing-text');
 const words = [
-  'Embedded Systems IoT',
-  'Diseño de PCBs',
-  'Firmware ESP32',
-  'Robótica e IA',
-  'Modelado 3D',
+  'Embedded Systems & IoT',
+  'PCB Design',
+  'Robotics & AI',
 ];
 let wordIdx = 0, charIdx = 0, deleting = false;
 
