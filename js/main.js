@@ -159,6 +159,16 @@ document.querySelectorAll('.carousel-slide img').forEach((img) => {
   img.addEventListener('mouseleave', () => cursorTip.classList.remove('visible'));
 });
 
+// ===== PROFILE PHOTO LIGHTBOX =====
+const profilePhoto = document.querySelector('.about-photo');
+if (profilePhoto) {
+  const idx = allLightboxImages.length;
+  allLightboxImages.push({ src: profilePhoto.src, alt: profilePhoto.alt, label: 'Lima, Perú', title: 'Diosdado Maykhol Jurado Mulato' });
+  profilePhoto.addEventListener('click', () => openLightbox(idx));
+  profilePhoto.addEventListener('mouseenter', () => cursorTip.classList.add('visible'));
+  profilePhoto.addEventListener('mouseleave', () => cursorTip.classList.remove('visible'));
+}
+
 // ===== VERSION SWITCHER =====
 document.querySelectorAll('.version-switcher').forEach(switcher => {
   const card = switcher.closest('.project-card');

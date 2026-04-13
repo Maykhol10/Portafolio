@@ -3,8 +3,14 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Diosdado Maykhol Jurado Mulato - PCB Designer</title>
-  <meta name="description" content="Portafolio de diseno de PCBs con KiCad creado por Diosdado Maykhol Jurado Mulato." />
+  <title>Maykhol Jurado — Embedded Systems & IoT</title>
+  <meta name="description" content="Portafolio de Diosdado Maykhol Jurado Mulato, Bachiller en Ingeniería Mecatrónica especializado en sistemas embebidos, IoT, diseño de PCBs y robótica." />
+  <!-- Open Graph -->
+  <meta property="og:title" content="Maykhol Jurado — Embedded Systems & IoT" />
+  <meta property="og:description" content="Proyectos en sistemas embebidos, IoT, diseño de PCBs y robótica." />
+  <meta property="og:url" content="https://maykhol10.github.io/Portafolio/" />
+  <meta property="og:type" content="website" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css" />
@@ -20,7 +26,6 @@
           <li><a href="#about">Sobre mi</a></li>
           <li><a href="#projects">Proyectos</a></li>
           <li><a href="#contact">Contacto</a></li>
-          <li><a href="https://github.com/Maykhol10" target="_blank" rel="noreferrer" class="btn-nav">GitHub</a></li>
         </ul>
         <button class="hamburger" id="hamburger" aria-label="Abrir menu" aria-expanded="false" aria-controls="site-menu">
           <span></span><span></span><span></span>
@@ -43,6 +48,10 @@
         <div class="hero-actions">
           <a href="#projects" class="btn-primary">Ver proyectos</a>
           <a href="#contact" class="btn-secondary">Contactar</a>
+          <a href="assets/CV_Maykhol_Jurado.pdf" download class="btn-cv">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            Descargar CV
+          </a>
         </div>
       </div>
 
@@ -117,6 +126,13 @@
 
         <div class="about-grid">
           <article class="about-text">
+            <div class="about-photo-wrap">
+              <img src="images/profile.png" alt="Diosdado Maykhol Jurado Mulato" class="about-photo" />
+              <div>
+                <p class="about-photo-name">Diosdado Maykhol<br>Jurado Mulato</p>
+                <p class="about-photo-role">Lima, Perú</p>
+              </div>
+            </div>
             <p>
               Soy bachiller en <strong>Ingeniería Mecatrónica</strong>, especializado en el diseño
               de PCBs, modelado 3D y desarrollo de sistemas embebidos con conectividad IoT.
@@ -253,8 +269,9 @@
               </div>
               <h3 class="card-title">🌱 Agrosmart — Automatización Hidropónica</h3>
               <p class="card-desc">
-                Sistema de monitoreo y control para agricultura hidropónica con arquitectura IoT escalable.
-                Sensores de pH, EC, temperatura y nivel con firmware embebido y visualización remota.
+                PCB custom con ESP32-WROOM, RS-485 (MAX485) y salidas por relé para monitoreo y control
+                autónomo de pH y conductividad eléctrica en cultivos hidropónicos.
+                Integrado con plataforma IoT propia para almacenamiento en la nube y visualización histórica en tiempo real.
               </p>
               <div class="card-meta">
                 <span>ESP32</span>
@@ -681,10 +698,9 @@
               </div>
               <h3 class="card-title">Robot Móvil Autónomo — Asistencia en el Hogar</h3>
               <p class="card-desc">
-                Robot autónomo con procesamiento completamente local de visión por computadora y
-                lenguaje natural. <strong>V1</strong> con Raspberry Pi 5, SSD MobileNet (90 objetos)
-                y Llama 3.2 por voz. <strong>V2</strong> en desarrollo con Jetson Orin 16GB y
-                cámara Intel RealSense D435i para percepción 3D avanzada.
+                Robot autónomo con procesamiento 100% local. <strong>V1</strong>: Raspberry Pi 5,
+                SSD MobileNet para detección de <strong>90 tipos de objetos</strong> y Llama 3.2
+                para interacción por voz. <strong>V2</strong> en desarrollo con Jetson Orin 16GB y cámara Intel RealSense D435i.
               </p>
               <div class="card-meta">
                 <span>RPi 5 → Jetson Orin 16GB</span>
@@ -788,6 +804,15 @@
             <div>
               <h4>GitHub</h4>
               <p>github.com/Maykhol10</p>
+            </div>
+          </a>
+          <a href="https://www.linkedin.com/in/maykhol-jm/" target="_blank" rel="noreferrer" class="contact-card">
+            <span class="contact-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            </span>
+            <div>
+              <h4>LinkedIn</h4>
+              <p>linkedin.com/in/maykhol-jm</p>
             </div>
           </a>
           <a href="https://www.electrofy.com.pe/" target="_blank" rel="noreferrer" class="contact-card">
