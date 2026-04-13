@@ -159,6 +159,18 @@ document.querySelectorAll('.carousel-slide img').forEach((img) => {
   img.addEventListener('mouseleave', () => cursorTip.classList.remove('visible'));
 });
 
+// ===== CERT LIGHTBOX =====
+document.querySelectorAll('.cert-card').forEach((card) => {
+  const img = card.querySelector('.cert-img');
+  const title = card.querySelector('h4')?.textContent?.trim() || '';
+  const date  = card.querySelector('.cert-date')?.textContent?.trim() || '';
+  const idx   = allLightboxImages.length;
+  allLightboxImages.push({ src: img.src, alt: img.alt, label: date, title });
+  card.addEventListener('click', () => openLightbox(idx));
+  card.addEventListener('mouseenter', () => cursorTip.classList.add('visible'));
+  card.addEventListener('mouseleave', () => cursorTip.classList.remove('visible'));
+});
+
 // ===== PROFILE PHOTO LIGHTBOX =====
 const profilePhoto = document.querySelector('.about-photo-circle img');
 if (profilePhoto) {
