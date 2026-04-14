@@ -222,7 +222,8 @@ window.addEventListener('scroll', () => {
   const isCompact = window.scrollY > 50;
   navbar.style.borderBottomColor = isCompact ? 'rgba(48,54,61,0.8)' : 'rgba(48,54,61,1)';
   navbar.style.background = isCompact ? 'rgba(13,17,23,0.94)' : 'rgba(13,17,23,0.86)';
-  const scrolled = window.scrollY / (document.body.scrollHeight - window.innerHeight);
+  const totalHeight = document.documentElement.scrollHeight - window.innerHeight;
+  const scrolled = window.scrollY / totalHeight;
   backToTop.classList.toggle('visible', scrolled > 0.7);
 });
 
