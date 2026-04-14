@@ -11,6 +11,14 @@
   <meta property="og:url" content="https://maykhol10.github.io/Portafolio/" />
   <meta property="og:type" content="website" />
   <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-LXG4TVZJVT"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-LXG4TVZJVT');
+  </script>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css?v=3" />
@@ -141,7 +149,7 @@
               </div>
             </div>
             <p>
-              Soy bachiller en <strong>Ingeniería Mecatrónica</strong>, especializado en el diseño
+              Soy bachiller en <strong>Ingeniería Mecatrónica</strong> por la <strong>Universidad Privada del Norte</strong>, especializado en el diseño
               de PCBs, modelado 3D y desarrollo de sistemas embebidos con conectividad IoT.
             </p>
             <p>
@@ -720,16 +728,31 @@
 
           <!-- OTTO NINJA -->
           <article class="project-card" id="proj-otto" data-tags="robotica arduino esp32">
-            <div class="card-image">
-              <div class="carousel" style="position:relative;">
-                <div class="carousel-track" data-labels="Por agregar">
-                  <div class="carousel-slide">
-                    <div style="width:100%;height:220px;background:var(--bg-card2);display:flex;align-items:center;justify-content:center;color:var(--text-muted);font-size:0.85rem;">Imágenes próximamente</div>
-                  </div>
+            <div class="card-image carousel" id="carousel-otto">
+              <div class="carousel-track" data-labels="Otto Ninja — Robot,Interfaz Web — Control,Sílabo del curso,Demo — Otto Ninja Battle">
+                <div class="carousel-slide">
+                  <img src="images/projects/otto/Otto_Ninja.jpeg" alt="Otto Ninja Robot Humanoide" loading="lazy" style="object-fit:contain;background:linear-gradient(135deg,#0d1117 0%,#1a2332 100%);" />
                 </div>
-                <div class="carousel-dots"><span class="carousel-dot active"></span></div>
+                <div class="carousel-slide">
+                  <img src="images/projects/otto/Interfaz_Web.png" alt="Interfaz Web — Programa de control" loading="lazy" style="object-fit:contain;background:linear-gradient(135deg,#0d1117 0%,#1a2332 100%);" />
+                </div>
+                <div class="carousel-slide" style="background:linear-gradient(135deg,#0d1117 0%,#1a2332 100%);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+                  <p style="color:var(--text-muted);font-size:0.82rem;letter-spacing:0.04em;">Sílabo — Otto Ninja Battle</p>
+                  <a href="assets/otto-silabus.pdf" target="_blank" rel="noreferrer" class="overlay-btn" style="position:static;opacity:1;transform:none;">Ver sílabo completo (PDF)</a>
+                </div>
+                <div class="carousel-slide" style="background:#000;display:flex;align-items:center;justify-content:center;">
+                  <iframe src="https://drive.google.com/file/d/1MssbCogRKzrOiVYsQQAy3le6jUJur9yA/preview" allow="autoplay" allowfullscreen loading="lazy" style="width:100%;aspect-ratio:16/9;border:none;max-height:100%;"></iframe>
+                </div>
               </div>
-              <div class="carousel-caption">Por agregar</div>
+              <button class="carousel-btn carousel-prev" aria-label="Anterior">&#8249;</button>
+              <button class="carousel-btn carousel-next" aria-label="Siguiente">&#8250;</button>
+              <div class="carousel-dots">
+                <span class="carousel-dot active"></span>
+                <span class="carousel-dot"></span>
+                <span class="carousel-dot"></span>
+                <span class="carousel-dot"></span>
+              </div>
             </div>
             <div class="card-body">
               <div class="card-tags">
@@ -891,6 +914,24 @@
         </div>
         <div class="cert-grid">
 
+          <a href="assets/Bachiller.pdf" target="_blank" rel="noreferrer" class="cert-card cert-card--pdf">
+            <img src="images/certificados/bachiller-thumb.png" alt="Grado de Bachiller UPN" class="cert-img" />
+            <div class="cert-info">
+              <h4>Grado de Bachiller</h4>
+              <p>Universidad Privada del Norte</p>
+              <span class="cert-date">Ingeniería Mecatrónica</span>
+            </div>
+          </a>
+
+          <a href="assets/Ingles.pdf" target="_blank" rel="noreferrer" class="cert-card cert-card--pdf">
+            <img src="images/certificados/ingles-thumb.png" alt="Certificado de Inglés A2" class="cert-img" />
+            <div class="cert-info">
+              <h4>Certificado de Inglés — A2</h4>
+              <p>WeTalk — UPC</p>
+              <span class="cert-date">Inglés Técnico</span>
+            </div>
+          </a>
+
           <div class="cert-card">
             <img src="images/certificados/ai-summer-camp.png" alt="AI Summer Camp PUCP" class="cert-img" />
             <div class="cert-info">
@@ -931,8 +972,8 @@
             <img src="images/certificados/habilidades-blandas.png" alt="Taller Habilidades Blandas" class="cert-img" />
             <div class="cert-info">
               <h4>Taller de Habilidades Blandas</h4>
-              <p></p>
-              <span class="cert-date"></span>
+              <p>Universidad Privada del Norte</p>
+              <span class="cert-date">Jul. 2022</span>
             </div>
           </div>
 
@@ -1002,13 +1043,6 @@
     </section>
   </main>
 
-  <footer>
-    <div class="container">
-      <p>Disenado y construido por <span class="accent">Diosdado Maykhol Jurado Mulato</span> - KiCad PCB Designer</p>
-      <p class="footer-sub">Hecho con HTML, CSS y muchos Gerbers.</p>
-    </div>
-  </footer>
-
   <!-- CURSOR TOOLTIP -->
   <div id="cursor-tip" class="cursor-tip">Click para ampliar</div>
 
@@ -1026,6 +1060,15 @@
       </div>
     </div>
   </div>
+
+  <button id="back-to-top" aria-label="Volver arriba">
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+
+  <footer class="site-footer">
+    <p class="footer-name">© 2026 Diosdado Maykhol Jurado Mulato</p>
+    <p class="footer-meta">Lima, Perú · Abierto a nuevas oportunidades</p>
+  </footer>
 
   <script src="js/main.js"></script>
 </body>

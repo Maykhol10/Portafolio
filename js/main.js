@@ -196,13 +196,38 @@ document.querySelectorAll('.version-switcher').forEach(switcher => {
   });
 });
 
+// ===== ACTIVE NAV LINK =====
+const navAnchors = document.querySelectorAll('.nav-links a[href^="#"]');
+const sections = document.querySelectorAll('section[id]');
+
+function updateActiveNav() {
+  const scrollY = window.scrollY + window.innerHeight * 0.3;
+  let current = '';
+  sections.forEach(sec => {
+    if (scrollY >= sec.offsetTop) current = sec.id;
+  });
+  navAnchors.forEach(link => {
+    link.classList.toggle('nav-active', link.getAttribute('href') === `#${current}`);
+  });
+}
+
+window.addEventListener('scroll', updateActiveNav, { passive: true });
+updateActiveNav();
+
 // ===== NAVBAR scroll effect =====
 const navbar = document.getElementById('navbar');
+const backToTop = document.getElementById('back-to-top');
 
 window.addEventListener('scroll', () => {
   const isCompact = window.scrollY > 50;
   navbar.style.borderBottomColor = isCompact ? 'rgba(48,54,61,0.8)' : 'rgba(48,54,61,1)';
   navbar.style.background = isCompact ? 'rgba(13,17,23,0.94)' : 'rgba(13,17,23,0.86)';
+  const scrolled = window.scrollY / (document.body.scrollHeight - window.innerHeight);
+  backToTop.classList.toggle('visible', scrolled > 0.7);
+});
+
+backToTop.addEventListener('click', () => {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
 });
 
 // ===== HAMBURGER menu =====
@@ -266,7 +291,7 @@ filterBtns.forEach((btn) => {
 updateProjectCount();
 
 // ===== SCROLL REVEAL =====
-const revealItems = document.querySelectorAll('.project-card, .skill-card, .summary-card, .contact-card, .about-text');
+const revealItems = document.querySelectorAll('.project-card, .skill-card, .summary-card, .contact-card, .about-text, .cert-card, .timeline-item');
 
 const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
